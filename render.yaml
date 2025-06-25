@@ -12,6 +12,8 @@ services:
       - key: ADMIN_TOKEN
         type: password
         generateValue: true
+      - key: SIGNUPS_ALLOWED
+        value: false
       - key: DATABASE_URL
         property: connectionString
         sync: false
