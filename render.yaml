@@ -14,6 +14,8 @@ services:
         generateValue: true
       - key: SIGNUPS_ALLOWED
         value: false
+      - key: INVITATIONS_ALLOWED
+        value: false
       - key: DATABASE_URL
         property: connectionString
         sync: false
