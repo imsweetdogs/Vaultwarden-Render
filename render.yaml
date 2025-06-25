@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: vaultwarden
+    plan: free
+    runtime: image
+    image:
+      url: vaultwarden/server:latest
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 80
+      - key: ADMIN_TOKEN
+        type: password
+        generateValue: true
+      - key: DATABASE_URL
+        property: connectionString
+        sync: false
+
+databases:
+  - name: vaultwarden-db
+    plan: free
