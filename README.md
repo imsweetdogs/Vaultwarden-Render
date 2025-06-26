@@ -10,7 +10,7 @@ Below you can find some of the necessary (at least to run this hosting configura
 |Environment Variable|Required?|Explanation|
 |---|-|---|
 |ADMIN_TOKEN|No|For admin access to admin dashboard, use [this wiki page](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page) for instructions on how to generate a secure token. This repo will auto generate a value which you can change later by going to your Render dashboard then go to your service then go to `Environment` tab end edit its value. If you want to completely disable it then remove the environment variable entirely|
-|DATABASE_URL|Yes|For database access to store info (If you use the render database, it is being created. However, you still need to specify the external connection link yourself.)|
+|DATABASE_URL|Yes|For database access to store info (If you use the render database, if they delete 30 day!!!)|
 |SIGNUPS_ALLOWED|No|Allows users to sign up, set it to `false` after you make your own account on your hosted instance if you don't want anyone else to be able to sign up, allowed values are `true` or `false`|
 |WEB_VAULT_ENABLED|No|Allows access to the web interface without needing the desktop and mobile clients or browser extensions. Values are `true` or `false`|
 
