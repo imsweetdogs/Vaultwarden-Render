@@ -19,7 +19,3 @@ services:
       - key: DATABASE_URL
         property: connectionString
         sync: false
-
-databases:
-  - name: vaultwarden-db
-    plan: free
