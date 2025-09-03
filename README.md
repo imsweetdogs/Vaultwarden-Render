@@ -1,6 +1,7 @@
 <div align="center">
   <h1>Vaultwarden on Render</h1>
   <img src="assets/logo.svg"/>
+  <h1><h1>
   <div>Это пример репозитория для запуска последней версии Vaultwarden на Render. Вам необходимо добавить любую бесплатную базу данных используя переменные окружения, предоставленные вики Vaultwarden.</div>
   <div>Ознакомьтесь с их вики-документацией, чтобы узнать больше о переменных окружения и узнать, как их использовать.</div>
 </div>
@@ -14,9 +15,10 @@
 
 <div align="center">
   <h2>Деплой</h2>
+  <a href="https://render.com/deploy?repo=https://github.com/msweetdogs/Vaultwarden-Render">
+    <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
+  </a>
 </div>
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/msweetdogs/Vaultwarden-Render)
 
 <div align="center">
   <h2>Обновления</h2>
