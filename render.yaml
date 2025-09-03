@@ -1,0 +1,15 @@
+services:
+  - type: web
+    plan: free
+    name: vaultwarden-render
+    runtime: image
+    image:
+      url: vaultwarden/server:latest
+    healthCheckPath: /
+    envVars:
+      - key: DATABASE_URL
+        property: connectionString
+        sync: false
+      - key: ADMIN_TOKEN
+        type: password
+        generateValue: true
