@@ -7,9 +7,11 @@ services:
       url: vaultwarden/server:latest
     healthCheckPath: /
     envVars:
-      - key: DATABASE_URL
-        property: connectionString
-        sync: false
+      - key: PORT
+        value: 8000
       - key: ADMIN_TOKEN
         type: password
         generateValue: true
+      - key: DATABASE_URL
+        property: connectionString
+        sync: false
